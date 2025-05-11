@@ -8,22 +8,34 @@ This repository contains the official implementation of NLFER, which is a facial
 * pandas
 * timm
 ## Installation
-* Clone this repo and install dependencies.
+Clone this repo and install dependencies.
 ```python  
 git clone https://github.com/CYChe1/NLFER
 pip install -r requirements.txt  
 ```
-## Datasets
-* Downloading the original images after obtaining official authorization for the mentioned datasets: [Affectnet](https://paperswithcode.com/dataset/affectnet), [RAF-DB](https://paperswithcode.com/dataset/raf-db), and [FERPlus](https://github.com/microsoft/FERPlus).
+## Preparation
+* create conda environment (we provide requirements.txt)
+* Data Preparation
+  Download [RAF-DB](https://paperswithcode.com/dataset/raf-db) dataset, and make sure it have a structure like following:
+  ```python  
+   - data/raf-basic/
+ 	 EmoLabel/
+ 	     list_patition_label.txt
+ 	 Image/aligned/
+ 	     train_00001_aligned.jpg
+ 	     test_0001_aligned.jpg
+ 	     ... 
+  ```
 * Allocating training and testing datasets. An example of this directory is shown in dataset/.
 ## Run
+Train on RAF-DB dataset:
 ```python  
 python main.py  
 ```
 ## Citations
-If you find NLFER useful in your research, please consider citing:
+If you find our work useful in your research, please consider citing:
 ```python  
-@article{
+@software{
    title = {NLFER: Multi-Branch Attention Cross-Fusion for Robust Facial Expression Recognition amidst Noisy Labels},
    url={https://github.com/CYChe1/NLFER},
    journal = {{The Visual Computer}}
