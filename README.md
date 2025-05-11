@@ -35,7 +35,7 @@ python main.py
 ## Citations
 If you find our work useful in your research, please consider citing:
 ```python  
-@software{
+@article{
    title = {NLFER: Multi-Branch Attention Cross-Fusion for Robust Facial Expression Recognition amidst Noisy Labels},
    url={https://github.com/CYChe1/NLFER},
    journal = {{The Visual Computer}}
