@@ -33,6 +33,12 @@ pip install -r requirements.txt
 ```python  
 python main.py  
 ```
+## Results
+Visualizes the importance weights
+![image](https://github.com/CYChe1/NLFER/blob/main/img/importance%20weights.png)
+* (a) original labels
+* (b) noisy labels (without label updating)
+* (c) ours
 ## Citations
 If you find our work useful in your research, please consider citing:
 ```python  
