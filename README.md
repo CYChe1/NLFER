@@ -33,16 +33,6 @@ pip install -r requirements.txt
 ```python  
 python main.py  
 ```
-## Results
-Visualizes the importance weights
-![image](https://github.com/CYChe1/NLFER/blob/main/img/importance%20weights.png)
-* (a) original labels
-* (b) without label updating
-* (c) Ours
-t-SNE on RAF-DB
-![image](https://github.com/CYChe1/NLFER/blob/main/img/t-SNE%20on%20RAF-DB.png)
-* (a) features learned with noisy labels
-* (b) Ours
 ## Citations
 If you find our work useful in your research, please consider citing:
 ```python  
