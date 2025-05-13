@@ -1,5 +1,6 @@
 # NLFER: Multi-Branch Attention Cross-Fusion for Robust Facial Expression Recognition amidst Noisy Labels
 This repository contains the official implementation of NLFER, which is a facial expression recognition network used for cross-fusion of multi-branch attention.
+![image](https://github.com/CYChe1/NLFER/blob/main/img/NLFER.png)
 ## Main requirements
 * python
 * torch
@@ -8,7 +9,7 @@ This repository contains the official implementation of NLFER, which is a facial
 * pandas
 * timm
 ## Installation
-Clone this repo and install dependencies.
+* Clone this repo and install dependencies.
 ```python  
 git clone https://github.com/CYChe1/NLFER
 pip install -r requirements.txt  
@@ -28,10 +29,20 @@ pip install -r requirements.txt
   ```
 * Allocating training and testing datasets. An example of this directory is shown in dataset/.
 ## Run
-Train on RAF-DB dataset:
+* Train on RAF-DB dataset:
 ```python  
 python main.py  
 ```
+## Results
+Visualizes the importance weights
+![image](https://github.com/CYChe1/NLFER/blob/main/img/importance%20weights.png)
+* (a) original labels
+* (b) without label updating
+* (c) Ours
+t-SNE on RAF-DB
+![image](https://github.com/CYChe1/NLFER/blob/main/img/t-SNE%20on%20RAF-DB.png)
+* (a) features learned with noisy labels
+* (b) Ours
 ## Citations
 If you find our work useful in your research, please consider citing:
 ```python  
